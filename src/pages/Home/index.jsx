@@ -1,6 +1,6 @@
 import React from "react";
 import { BlurContainer, HomeContainer } from "./styled-component";
-import bgImage from "../../assets/images/mockup_playlist_cover.webp";
+import bgImage from "../../assets/images/nature.webp";
 import AudioCard from "../../components/AudioCard";
 
 function Home() {

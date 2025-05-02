@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AudioCardContainer = styled.div`
   margin-top: 10px;
-  background-color: #341b3a;
+  background-color: #104911 ;
   color: #fff;
   height: fit-content;
 `;
@@ -13,6 +13,9 @@ export const BackgroundCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-size: cover;
+  background-position: center;
 `;
 
 export const AudioIconsContainer = styled.div`
@@ -31,7 +34,7 @@ export const AudioIconsContainer = styled.div`
 `;
 
 export const AudioCountBadge = styled.div`
-  background-color: #341b3a;
+  background-color: #008000;
   border-radius: 4px;
   padding: 8px;
   position: absolute;
@@ -49,7 +52,7 @@ export const AudioDisplaySection = styled.div`
   gap: 1px;
 
   button {
-    background-color: #220e27;
+    background-color: #006400;
     width: 100%;
     display: flex;
     -webkit-box-pack: justify;

@@ -7,7 +7,7 @@ import {
   AudioTitleSection,
   BackgroundCard,
 } from "./styled-component";
-import bgImage from "../../assets/images/mockup_playlist_cover.webp";
+import bgImage from "../../assets/images/nature.webp";
 import {
   PlayIcon,
   PlaylistIcon,
@@ -140,10 +140,9 @@ function AudioCard() {
               <p
                 style={{
                   color: index === currentIndex ? "#007bff" : "white",
-                  fontWeight: index === currentIndex ? "600" : "400",
                 }}
               >
-                {audio.title}
+                {audio?.title}
               </p>
               <span
                 style={{ color: index === currentIndex ? "#007bff" : "white" }}
@@ -156,7 +155,7 @@ function AudioCard() {
       )}
 
       <AudioTitleSection>
-        <h2>TV Nose</h2>
+        <h2>Relaxing Music</h2>
         <p>Our first single</p>
       </AudioTitleSection>
     </AudioCardContainer>
