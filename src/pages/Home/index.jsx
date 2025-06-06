@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BlurContainer, HomeContainer } from "./styled-component";
-import bgImage from "../../assets/images/nature.webp";
 import AudioCard from "../../components/AudioCard";
 import { useSearchParams } from "react-router-dom";
 
