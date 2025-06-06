@@ -131,13 +131,14 @@ function Home() {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('q');
   const [album, setAlbum] = useState(null);
-  console.log(album)
+  console.log("Albumn: ", album)
 
   useEffect(() => {
     const albumData = query
-      ? audioData.find(alb => alb.id === query)
+      ? audioData.find(alb => alb.id.toLowerCase() === query.toLowerCase())
       : audioData[0];
 
+    console.log("alb", albumData)
     setAlbum(albumData || audioData[0]);
   }, [query]);
 
