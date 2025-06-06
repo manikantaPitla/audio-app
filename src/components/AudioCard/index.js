@@ -9,7 +9,6 @@ import {
   AudioRangeTrackContainer,
   AudioRangeTrackProgress,
 } from "./styled-component";
-import bgImage from "../../assets/images/nature.webp";
 import {
   PlayIcon,
   PlaylistIcon,
