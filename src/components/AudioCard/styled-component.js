@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AudioCardContainer = styled.div`
   margin-top: 10px;
-  background-color: #104911 ;
+  background-color:${(props) => props.$bgColor};
   color: #fff;
   height: fit-content;
 `;
@@ -34,7 +34,7 @@ export const AudioIconsContainer = styled.div`
 `;
 
 export const AudioCountBadge = styled.div`
-  background-color: #008000;
+  background-color: ${(props) => props.$bgColor};
   border-radius: 4px;
   padding: 8px;
   position: absolute;
@@ -52,7 +52,7 @@ export const AudioDisplaySection = styled.div`
   gap: 1px;
 
   button {
-    background-color: #006400;
+    background-color:${(props) => props.$bgColor};
     width: 100%;
     display: flex;
     -webkit-box-pack: justify;
@@ -63,10 +63,10 @@ export const AudioDisplaySection = styled.div`
     min-height: 56px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    color: #fff;
+    color:#fff;
     border: none;
     font-weight: 700;
-  }
+    }
 `;
 
 export const AudioTitleSection = styled.div`
@@ -81,4 +81,26 @@ export const AudioTitleSection = styled.div`
   p {
     font-size: 13px;
   }
+`;
+
+
+// New styled components for the range track
+export const AudioRangeTrackContainer = styled.div`
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+`;
+
+export const AudioRangeTrackProgress = styled.div`
+  height: 100%;
+  width: ${(props) => props.$progress || 0}%;
+  background-color: ${(props) => props.$primaryColor || "white"};
+  border-radius: 2px;
+  transition: width 0.1s linear;
 `;

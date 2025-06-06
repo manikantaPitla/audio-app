@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
   width: 100vw;
   background-size: cover;
   background-position: center;
+  overflow-y: auto
 `;
 
 export const BlurContainer = styled.div`
@@ -14,4 +15,5 @@ export const BlurContainer = styled.div`
   background-color: rgba(0,0,0,0.2);
   display: flex;
   justify-content: center;
+  overflow-y: auto;
 `;
