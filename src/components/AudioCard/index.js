@@ -113,6 +113,7 @@ function AudioCard({ album }) {
       });
       audioObjectsRef.current = [];
     };
+    // eslint-disable-next-line
   }, [album]);
 
   useEffect(() => {
@@ -130,6 +131,7 @@ function AudioCard({ album }) {
         audioElement.removeEventListener("ended", handleAudioEnd);
       }
     };
+    // eslint-disable-next-line
   }, [currentIndex, album?.audioFiles?.length]);
 
   useEffect(() => {
