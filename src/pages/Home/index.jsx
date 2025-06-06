@@ -6,9 +6,10 @@ import { useSearchParams } from "react-router-dom";
 
 function Home() {
 
-  const [searchParams, _] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   console.log("Query Params: ", searchParams.get('q'))
+  console.log(setSearchParams)
 
   return (
     <HomeContainer style={{ backgroundImage: `url(${bgImage})` }}>
