@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const AudioCardContainer = styled.div`
   margin-top: 10px;
   background-color:${(props) => props.$bgColor};
-  color: #fff;
+  color:#ffffff;
   height: fit-content;
+  
 `;
 export const BackgroundCard = styled.div`
   width: 360px;
@@ -43,7 +44,8 @@ export const AudioCountBadge = styled.div`
   left: 32px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 8px; 
+  color: ${props => props.$textColor} !important; 
 `;
 
 export const AudioDisplaySection = styled.div`
@@ -72,6 +74,7 @@ export const AudioDisplaySection = styled.div`
 export const AudioTitleSection = styled.div`
   text-align: center;
   padding: 32px;
+  color: ${props => props.$text};
 
   h2 {
     font-size: 22px;

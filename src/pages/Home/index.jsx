@@ -33,10 +33,14 @@ const audioData = [
   {
     id: "early-morning-in-greens",
     albumName: "Early morning in greens",
+    subTitle: "Stillness of Awakening",
     albumImage: early_morning_in_greens_img,
     colors: {
       primary: "#FDEE8B",
-      secondary: "#D3E280"
+      secondary: "#D3E280",
+      text: "#006400",
+      textDefault: "#6d6a75",
+      titleColor: "#245501"
     },
     audioFiles: [{
       name: "Birds Chirping",
@@ -49,20 +53,32 @@ const audioData = [
   {
     id: "golden-hour-glow",
     albumName: "Golden hour glow",
+    subTitle: "Our first single",
     albumImage: golden_hour_img,
     colors: {
       primary: "#402b6e",
       secondary: "#d7a4e4",
+      text: "#402b6e",
+      textDefault: "#ffffff",
+      titleColor: "#ffffff"
+
     },
-    audioFiles: []
+    audioFiles: [
+
+    ]
   },
   {
     id: "mid-night-sernity",
     albumName: "Midnight Serenity",
+    subTitle: "Stillness of surrender",
     albumImage: mid_night_img,
     colors: {
       secondary: "#262262",
-      primary: "#000017"
+      primary: "#000017",
+      text: "#ffffff",
+      textDefault: "#6c757d",
+      titleColor: "#ffffff"
+
     },
     audioFiles: [{
       name: "Night",
@@ -80,10 +96,15 @@ const audioData = [
   {
     id: "rainy-window",
     albumName: "Rainy window",
+    subTitle: "Stillness of Longing",
     albumImage: rainy_window_img,
     colors: {
       primary: "#1B3558",
-      secondary: "#ABCFE8"
+      secondary: "#ABCFE8",
+      text: "#1B3558",
+      textDefault: "#495057",
+      titleColor: "#ffffff"
+
     },
     audioFiles: [{
       name: "Gentle rain from window",
@@ -96,11 +117,15 @@ const audioData = [
   {
     id: "stillness",
     albumName: "Stillness",
+    subTitle: "our first single",
     albumImage: stillness_img,
     colors: {
       primary: "#000017",
       secondary: "#ececed",
-      text: "#adb5bd"
+      text: "#000017",
+      textDefault: "#6c757d ",
+      titleColor: "#ffffff"
+
     },
     audioFiles: [
       {
