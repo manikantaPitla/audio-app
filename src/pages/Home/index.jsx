@@ -4,16 +4,25 @@ import AudioCard from "../../components/AudioCard";
 import { useSearchParams } from "react-router-dom";
 
 // ---------------audio imports-----------------------
+
+// Early morning in greens
 import birds_chirping from "../../assets/audios/Early-morning-in-greens/birds_chirping.mp3";
 import running_stream from "../../assets/audios/Early-morning-in-greens/running_stream.mp3";
 
+// Golden hour glow
+import drift_light from '../../assets/audios/Golden-hour-glow/Driftlight.mp3';
+import Glint from '../../assets/audios/Golden-hour-glow/Glint.mp3';
+
+// Mid night serenity
 import night from '../../assets/audios/Midnight-Serenity/NIGHT.mp3'
 import sound_night from '../../assets/audios/Midnight-Serenity/SOUNDNIGHT.mp3'
 import thunder from '../../assets/audios/Midnight-Serenity/THUNDER.mp3'
 
+// Rainy window
 import gentle_rain_from_window from '../../assets/audios/Rainy-window/gentle-rain-from-window.mp3';
 import rain_in_evening from '../../assets/audios/Rainy-window/rain-in-evening.mp3';
 
+// Stillness
 import airflow from '../../assets/audios/Stillness/airflow.mp3'
 import baby_laughing from '../../assets/audios/Stillness/BABY-LAUGHING.mp3'
 import ocean_waves from '../../assets/audios/Stillness/OCEAN-WAVES.mp3'
@@ -21,7 +30,6 @@ import singing_bowls from '../../assets/audios/Stillness/SINGING-BOWLS.mp3'
 import under_water from '../../assets/audios/Stillness/UNDERWATER.mp3'
 
 // ---------------image imports-----------------------
-
 import early_morning_in_greens_img from '../../assets/pics/EARLY_MORNING_IN_GREENS.jpg'
 import golden_hour_img from '../../assets/pics/GOLDEN_HOUR.jpg'
 import mid_night_img from '../../assets/pics/MIDNIGHT.jpg'
@@ -53,7 +61,7 @@ const audioData = [
   {
     id: "golden-hour-glow",
     albumName: "Golden hour glow",
-    subTitle: "Our first single",
+    subTitle: "stillness of embracing",
     albumImage: golden_hour_img,
     colors: {
       primary: "#402b6e",
@@ -61,10 +69,16 @@ const audioData = [
       text: "#402b6e",
       textDefault: "#ffffff",
       titleColor: "#ffffff"
-
     },
     audioFiles: [
-
+      {
+        name: "Drift Light",
+        file: drift_light
+      },
+      {
+        name: "Glint",
+        file: Glint
+      }
     ]
   },
   {
@@ -117,7 +131,7 @@ const audioData = [
   {
     id: "stillness",
     albumName: "Stillness",
-    subTitle: "our first single",
+    subTitle: "",
     albumImage: stillness_img,
     colors: {
       primary: "#000017",
